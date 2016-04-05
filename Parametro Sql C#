@@ -1,0 +1,8 @@
+                MySqlParameter StatoP = new MySqlParameter();
+                StatoP.Direction = ParameterDirection.Input;
+                StatoP.DbType = DbType.String;
+                if (AC.Cells[Corridore, 5].Value == null)
+                { StatoP.Value = "Sola lettura"; }
+                else
+                { StatoP.Value = "--"; }
+                InserisciRiga.Parameters.AddWithValue("@Stato", StatoP.Value);
