@@ -1,0 +1,22 @@
+    class Connessione
+    {
+        MySqlConnection Georgia = new MySqlConnection();
+
+        //Il costruttore definisce la stringa di connessione
+        public Connessione()
+        {
+            Georgia.ConnectionString = "SERVER=localhost; Database=carolinapanthers2016; User ID=root; Password=jesussss79";
+        }
+
+        //Crea connessione e apre;
+        public void connetti()
+        {
+            Georgia.Open();
+        }
+        
+        //Chiude la connessione
+        public void disconnetti()
+        {
+            Georgia.Close();
+        }
+    }
