@@ -1,0 +1,2 @@
+//Esempio. Formatta il double (5,454545) con due cifre decimali
+String.Format("{0:0.##}", 5,454545);
