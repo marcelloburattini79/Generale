@@ -1,2 +1,9 @@
-//Esempio. Formatta il double (5,454545) con due cifre decimali
-String.Format("{0:0.##}", 5,454545);
+//String.Format formatta le stringhe in moltissimi modi.
+
+//1) Il formato "{0:0.##} inserisce tante decimali quanti sono i cancelletti (#)
+
+//Esempi:
+
+String.Format("{0:0.##}", 5,454545); //-> Output: 5,45
+
+String.Format("{0:0}", 5,454545); //-> Output: 5
